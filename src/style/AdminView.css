@@ -1,0 +1,227 @@
+@media screen {
+    .admin-cfg {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0 15px;
+        
+    }
+    
+    .admin-cfg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--dark-theme);
+    }
+    
+    .admin-cfg h1 {
+        color: var(--card-color);
+        font-size: 3rem;
+    }
+
+    .adminForm {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        
+    }
+    
+    .input-input {
+        outline: none; 
+        margin: 3px 0;
+        border-radius:3px;
+        border: none;
+        padding: 15px 10px;
+    }
+    
+    .admin-btn {
+        background-color: var( --primary-color);
+        color: var(--card-color);
+        padding: 14px 15px;
+        text-align: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin-top: 3px;
+        border:none; 
+    }
+    
+    .go-back {
+       color: var(--card-color);
+       text-decoration: none;
+       font-size: 0.9rem;
+       margin-top:0.4rem;   
+       cursor: pointer;
+    }
+    
+    .go-back span {
+        color: var(--highligter);
+        font-weight:900;
+    }
+
+    .errorMessage {
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 10px 30px;
+        color: #d81b1b;
+        word-break:break-all ;
+      
+    }
+
+}
+
+/* ipad/tablet */
+@media only screen and (min-width:48.0em){ 
+
+    .admin-cfg h1 {
+        font-size: 3.8rem;
+    }
+
+
+    .adminForm {
+        width: 350px;
+        
+    }
+    
+
+    .input-input {
+        padding: 23px 15px;
+        margin: 8px 0;
+    }
+
+    .input-input::placeholder {
+        font-size:0.9rem;
+    }
+
+    .admin-btn {
+        padding: 18px 15px;
+        font-size: 1.6rem;
+    }
+    
+    .go-back {
+        font-size: 1.1rem;
+        margin-top:0.4rem;   
+     }
+     
+}
+
+ /* ipad pro screens & laptop */
+ @media only screen and (min-width:49.0em) and (max-width:64em) {
+
+    .admin-cfg h1 {
+        font-size: 4.2rem;
+    }
+
+
+    .adminForm {
+        width: 400px;
+        
+    }
+    
+
+    .input-input {
+        padding: 25px 15px;
+        margin: 8px 0;
+    }
+
+    .input-input::placeholder {
+        font-size:1rem;
+    }
+
+    .admin-btn {
+        padding: 18px 15px;
+        font-size: 1.8rem;
+    }
+    
+    .go-back {
+        font-size: 1.3rem;
+        margin-top:0.4rem;   
+        cursor: pointer;
+     }
+
+}
+
+ /* large screens : Desktop and 4k screens */
+    
+ @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+     
+    .admin-cfg h1 {
+        font-size: 4.3rem;
+    }
+
+
+    .adminForm {
+        width: 400px;
+        
+    }
+    
+
+    .input-input {
+        padding: 25px 15px;
+        margin: 8px 0;
+    }
+
+    .input-input::placeholder {
+        font-size:1rem;
+    }
+
+    .admin-btn {
+        padding: 18px 15px;
+        font-size: 1.8rem;
+    }
+    
+    .go-back {
+        font-size: 1.3rem;
+        margin-top:0.4rem;   
+        cursor: pointer;
+     }
+
+
+}
+
+   /* 5k screens and above */
+    
+   @media only screen and (min-width:91.0em) {
+
+      
+    .admin-cfg h1 {
+        font-size: 7.3rem;
+    }
+
+
+    .adminForm {
+        width: 650px;
+        
+    }
+    
+
+    .input-input {
+        padding: 45px 30px;
+        margin: 12px 0;
+    }
+
+    .input-input::placeholder {
+        font-size:2rem;
+    }
+
+    .admin-btn {
+        padding: 35px 15px;
+        font-size: 3.5rem;
+    }
+    
+    .go-back {
+        font-size: 2rem;
+        margin-top:0.6rem;   
+        cursor: pointer;
+     }
+
+     .errorMessage {
+        font-size: 1.2rem;
+ 
+    }
+
+}

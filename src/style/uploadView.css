@@ -1,0 +1,231 @@
+@media screen {
+    
+    .upload-cfg {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        padding: 0 15px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: var(--bg-color);
+    }
+    .uploadTitle {
+      text-align: center;
+     
+    }
+
+    .imgUpload {
+        border: 2px solid var(--primary-color) ;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    .imgField {
+        object-fit: contain;
+        object-position: center;
+        border-bottom: 2px dotted #8b8a8a;
+        height: 230px;
+        width: 100%;
+        
+    }
+    
+    .imgField[alt] {
+        text-align: center;
+        margin: auto;
+        line-height: 210px;
+        outline: none;
+        font-size: 1.5rem;
+        
+    }
+    
+    
+    .formData {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input, textarea {
+        outline: none;
+        border: none; 
+    }
+
+    
+    input[type=file] {
+       display: none;
+       text-transform: uppercase;
+    }
+    
+    .uploadDetails, .price, .uploadDescription {
+        border-bottom: 2px solid #8b8a8a ;
+    }
+    
+    .formData textarea, input:hover {
+        border-bottom: 2px solid var(--primary-color);
+        transition: none;
+    }
+
+    .uploadDescription {
+      height: 120px;
+      width: 100%;
+    
+    }
+    
+    .uploadInput {
+        padding: 12px 20px;
+        margin: 10px 0;
+       
+    }
+    
+    .uploadInput::placeholder {
+        margin-left: 15px;
+        font-family: var(--header-font);
+    }
+    
+    .btnUpload {
+        background-color: var( --primary-color);
+        color: var(--card-color);
+        padding: 10px 32px;
+        text-align: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border:none; 
+    }
+
+    .logOut {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+    
+    .logOut p {
+        font-size: 0.7rem;
+        margin: 2px 0;
+        color: var(--primary-color);
+        cursor:pointer;
+    }
+
+    .logOut span {
+        color: var(--highligter);
+    }
+
+}
+
+
+ /* ipad pro screens & laptop */
+ @media only screen and (min-width:49.0em) and (max-width:64em) {
+  
+    
+    .imgField[alt] {
+        font-size: 1.6rem;
+        
+    }
+
+    .uploadInput {
+        padding: 14px 20px;
+        margin: 10px 0;
+       
+    }
+     
+    .uploadInput::placeholder {
+        font-size: 1.2rem;
+    }
+    
+
+    .btnUpload {
+        padding: 15px 32px;
+        font-size: 1.6rem;
+    }
+
+    
+    .logOut p {
+        font-size: 1rem;
+    }
+
+
+}
+
+ /* large screens : Desktop and 4k screens */
+    
+ @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+
+    .imgField {
+        border-bottom: 2.5px dotted #8b8a8a;
+        height: 250px;
+        width: 100%;
+        
+    }
+    
+    .imgField[alt] {
+        font-size: 1.6rem;
+        line-height: 230px;
+        
+    }
+
+    .uploadInput {
+        padding: 17px 20px;
+        margin: 15px 0;
+       
+    }
+     
+
+     
+    .uploadInput::placeholder {
+        font-size: 1rem;
+    }
+    
+
+    .btnUpload {
+        padding: 18px 32px;
+        font-size: 1.5rem;
+    }
+
+    .logOut p {
+        font-size: 1.3rem;
+    }
+
+}
+
+      /* 5k screens and above */
+    
+@media only screen and (min-width:91.0em) {
+    
+       
+    .imgField {
+        border-bottom: 5px dotted #8b8a8a;
+        height: 350px;
+        
+    }
+
+    .imgField[alt] {
+        font-size: 2.3rem;
+        line-height: 350px;
+        
+    }
+
+    .uploadInput {
+        padding: 30px 20px;
+        margin: 30px 0;
+       
+    }
+
+    .uploadInput::placeholder {
+        font-size: 1.7rem;
+    }
+    
+    .btnUpload {
+        padding:35px 32px;
+        font-size: 1.9rem;
+    }
+
+    .logOut p {
+        font-size: 2rem;
+    }
+     
+
+    }

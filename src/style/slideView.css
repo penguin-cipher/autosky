@@ -1,0 +1,246 @@
+@media screen {
+
+  .autoScroll {
+  margin: 20px 0;
+  display: flex;
+  overflow-x: scroll; 
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .autoScroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .autoScroll{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* animating the slide */
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    } 
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  .display {
+   display: flex;
+   margin-left: 15px;
+   border-radius: 30px;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--card-color);
+   animation: slide 10s linear infinite;
+  }
+  
+  .imageSlide{
+    height: 250px;
+    width: 130px; 
+    object-fit:contain;
+    object-position: center; 
+  }
+  
+  .txtSlide h3 {
+    
+      font-size: 1.4rem;
+      margin-bottom: 3px;
+      word-break: break-all;
+  }
+  
+  .txtSlide p {
+    font-size: 1.2rem;
+    word-break:break-all;
+  }
+  
+  .txtSlide {
+      width: 40vh;
+  }
+
+  .networkFailure {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+   
+  }
+
+  .networkFailure h1 {
+    font-size: 1.7rem;
+  }
+  
+  }
+  
+     /* ipad/tablet */
+     @media only screen and (min-width:48.0em){ 
+  
+      .autoScroll {
+        margin: 40px 0;
+        }
+        
+       
+        .display {
+         margin-left: 20px;
+        }
+        
+        .imageSlide{
+          height: 280px;
+          width: 150px;  
+        }
+  
+        .txtSlide h3 {
+          font-size: 1.4rem;
+      }
+        
+        .txtSlide p {
+          font-size: 1.3rem;
+        }
+  
+        .txtSlide {
+            width: 50vh;
+        }
+
+        
+      .networkFailure {
+          padding: 40px;
+   
+      }
+
+      .networkFailure h1 {
+         font-size: 1.9rem;
+     }
+  
+  
+  
+    }
+  
+        /* ipad pro screens & laptop */
+  @media only screen and (min-width:49.0em) and (max-width:64em) {
+  
+    
+    .autoScroll {
+      margin: 50px 0;
+      }
+     
+      .display {
+       margin-left: 30px;
+      }
+      
+      .imageSlide{
+        height: 300px;
+        width: 160px;  
+      }
+  
+      .txtSlide h3 {
+        font-size: 1.6rem;
+  
+      }
+      
+      .txtSlide p {
+  
+        font-size: 1.9rem;
+      }
+      
+      .txtSlide {
+          width: 50vh;
+      }
+
+            
+      .networkFailure {
+        padding: 40px;
+   
+     }
+
+     .networkFailure h1 {
+        font-size: 2rem;
+    }
+  
+  
+  }
+  
+     /* large screens : Desktop and 4k screens */
+  
+     @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+  
+      .display {
+        margin-left: 40px;
+       }
+      
+      .imageSlide{
+        height: 270px;
+        width: 140px;  
+      }
+  
+      .txtSlide h3 {
+        font-size: 1.4rem;
+  
+      }
+      
+      .txtSlide p {
+        font-size: 1.3rem;
+      }
+      
+      .txtSlide {
+        width: 500px;
+        
+      }
+
+      .networkFailure {
+        padding: 50px;
+       
+      }
+    
+      .networkFailure h1 {
+        font-size: 2.2rem;
+      }
+  
+  }
+  
+         /* 5k screens and above */
+  
+  @media only screen and (min-width:91.0em) {
+  
+              
+    .autoScroll {
+      margin: 80px 0;
+      }
+      
+     
+      .display {
+       margin-left: 40px;
+       animation: slide 6s linear infinite;
+      }
+      
+      .imageSlide{
+        height: 490px;
+        width: 260px;  
+      }
+  
+      .txtSlide h3 {
+        font-size: 3rem;
+  
+      }
+      
+      .txtSlide p {
+        font-size: 2.4rem;
+      }
+      
+      .txtSlide {
+          width: 800px;
+      }
+
+      .networkFailure {
+        padding: 70px;
+       
+      }
+    
+      .networkFailure h1 {
+        font-size: 2.6rem;
+      }
+  
+         }

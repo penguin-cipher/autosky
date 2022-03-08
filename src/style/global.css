@@ -1,0 +1,82 @@
+@media screen {
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+    
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        /* colors */
+        --card-color:#F7F6F4;
+        --primary-color:#33333F;
+        --secondary-bx-color:#4F4D4D;
+        --bx-outline-color1:#D2E9E3;
+        --bx-outline-color2:#BCDBD3;
+        --bg-color:#EFF0F0;
+        --highligter:#3998D5;
+        --dark-theme: #252631;
+    
+        /*font*/
+        --header-font:'Open Sans', sans-serif;
+        --normal-font:'Lato', sans-serif;
+    }
+    
+    *{
+        -webkit-transition:all 1s ease-in;
+             -moz-transition:all 1s ease-in;
+                   -o-transition:all 1s ease-in;
+                         transition:all 1s ease-in;
+    }
+    
+    * h1 , h2 {
+        font-family: var(--header-font);
+        font-size: 2em;
+        font-weight: 600;
+        margin: 10px 0;
+     
+    }
+
+
+    
+    body{
+        font-family: var(--normal-font);
+        color: var(--primary-color);
+        background-color: var(--bg-color);
+      
+    
+    }
+    
+    
+    .app-cl {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0 15px;
+        
+    
+    }
+    
+    }
+       @media screen {}
+    
+        /* ipad/tablet */
+        @media only screen and (min-width:48.0em){ 
+        }
+    
+        /* ipad pro screens & laptop */
+        @media only screen and (min-width:49.0em) and (max-width:64em) {
+        }
+    
+        /* large screens : Desktop and 4k screens */
+    
+        @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+        }
+    
+            /* 5k screens and above */
+    
+        @media only screen and (min-width:91.0em) {
+        }

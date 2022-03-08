@@ -1,0 +1,153 @@
+@media screen {
+    .testimony {
+        content: "";
+        display: table;
+        clear: both;
+        display: flex;
+        margin: 20px 0;
+        padding: 30px 0;
+        border-radius: 30px;
+        flex-direction: column;
+        background-color: var(--card-color);
+     
+ 
+    
+    }
+    
+    .title-t1 {
+        display:none;
+        transition: none;
+    }
+    
+    
+    .testimony h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    
+    }
+    
+    }   
+    
+      /* ipad/tablet */
+      @media only screen and (min-width:48.0em){ 
+    
+        .testimony h1 { 
+            
+            font-size: 2rem;
+            margin-bottom: 20px;
+    
+        }
+    }
+    
+    
+    /* ipad pro screens & laptop */
+    @media only screen and (min-width:49.0em) and (max-width:64em) {
+         
+        .title-t2 {
+            display:none;
+            transition: none;
+        }
+    
+        .title-t1 {
+            position: relative;
+            display: relative;
+            top: 80px;
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        
+        .testimony h1 { 
+            
+            font-size: 2.2rem;
+    
+    
+        }
+    
+        .testimony {
+    
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            height: 530px ;
+            margin-bottom: 30px;
+        
+        }
+    
+    
+        }
+    
+     /* large screens : Desktop and 4k screens */
+     @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+    
+    
+        .title-t2 {
+            display:none;
+            transition: none;
+        }
+    
+        .title-t1 {
+            position: relative;
+            display: relative;
+            top: 80px;
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        
+        .testimony h1 { 
+            
+            font-size: 2.4rem;
+    
+    
+        }
+    
+        .testimony {
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            height: 600px ;
+        
+        }
+    
+    }
+    
+    
+    /* 5k screens and above */
+    @media only screen and (min-width:91.0em) {
+    
+        
+        .title-t2 {
+            display:none;
+            transition: none;
+        }
+    
+        .title-t1 {
+            position: relative;
+            display: relative;
+            top: 80px;
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        
+        .title-t1 h1 { 
+            
+            font-size: 3rem;
+    
+        }
+    
+        .testimony {
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            height: 730px ;
+        
+        }
+    }
+    
+    

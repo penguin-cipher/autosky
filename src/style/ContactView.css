@@ -1,0 +1,437 @@
+@media screen {
+
+    .contact-cfg {
+        background-color: var(--bx-outline-color2);
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 50px 20px;
+    }
+    
+    .contact-cfg h2 {
+        font-size: 1.3rem;
+        
+    }
+    
+    .intouch {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .intouch span:f {
+        font-weight: bold;
+    }
+    
+    .flex-icon {
+        display: flex;
+        justify-content:space-between;
+        width: 80%;
+      
+    }
+    
+    .contactIcon {
+    width: 30px;
+    display:flex;
+    border-radius: 50%;
+    height: 30px;
+    z-index: 1;
+    cursor: pointer;
+    flex-direction: row;
+    
+    }
+    
+    .contactIcon {
+    
+        -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+        -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+        transition: transform ease-out 0.1s, background 0.2s;
+    }
+    
+    .contactIcon:hover {
+    
+        -webkit-transform: scale(0.93);
+        -moz-transform: scale(0.93);
+        -ms-transform: scale(0.93);
+        transform: scale(0.93);
+    }
+    
+    
+    }
+    
+    
+    .contactUs {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-form {
+        margin: 5px 0;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+        color: var(----secondary-bx-color);
+        padding: 10px 0;
+    
+    }
+    
+    .txt-trans {
+        text-transform: capitalize;
+        
+    }
+    
+    .input-form:hover {
+         border-bottom:2px solid var(--secondary-bx-color);
+         transition: none;
+    }
+    
+    .input-form:focus {
+        outline: none;
+        border-bottom:2px solid var(--secondary-bx-color);
+        transition:none;
+    }
+    .input-size::placeholder {
+        position: relative;
+        left: 5px;
+    
+    }
+    
+    .textstyle {
+       padding: 10px 14px;
+    }
+    
+    .input-size {
+        padding: 10px 10px;
+    }
+    
+    .btn-s {
+        padding: 15px 10px;
+        border: none;
+        width: 100%;
+    }
+    .btn-s:hover {
+        background-color: var(--primary-color);
+        color:var(--card-color);
+        transition: none;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content:center;
+        padding: 5px;
+    }
+
+    .footer a {
+        text-decoration: none;
+        cursor: none;
+        color: var(--primary-color)
+    }
+    
+    .footer span {
+        font-size: 0.7rem;
+    }
+
+    
+     /* ipad/tablet */
+     @media only screen and (min-width:48.0em){ 
+      
+        
+    .contact-cfg {
+        flex-direction: row;
+        border-radius: 30px;
+    }
+    
+    .address-c {
+        flex: 70%;
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+    }
+    
+    .contact-cfg h2 {
+        font-size: 1.4rem;
+        
+    }
+    
+    
+    .intouch {
+        flex: 100%;
+        height: 300px;
+        justify-content: space-evenly;
+        
+    }
+    
+    
+    .flex-icon {
+        width: 70%;
+        display: flex;
+        justify-content:space-between;
+        
+      
+    }
+    
+    .contactIcon {
+    width: 32px;
+    display:flex;
+    height: 32px;
+    cursor: pointer;
+    flex-direction: row;
+    
+    }
+    
+    .contactUs {
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    
+    .input-size {
+        padding: 10px 10px;
+    }
+    
+    .btn-s {
+        padding: 15px 10px;
+    }
+    
+    .footer span {
+        font-size: 1rem;
+    }
+    
+    }
+    
+     /* ipad pro screens & laptop */
+     @media only screen and (min-width:49.0em) and (max-width:64em) {
+     
+           
+    .contact-cfg {
+        flex-direction: row;
+        border-radius: 30px;
+    }
+    
+    .address-c {
+        flex: 70%;
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+    }
+    
+    .contact-cfg h2 {
+        font-size: 1.4rem;
+        
+    }
+    
+    .contact-cfg p , span {
+        font-size: 1.1rem;
+    }
+    
+    .intouch {
+        flex: 100%;
+        height: 300px;
+        justify-content: space-evenly;
+        
+    }
+    
+    
+    .flex-icon {
+        width: 70%;
+        display: flex;
+        justify-content:space-between;
+        
+      
+    }
+    
+    .contactIcon {
+    width: 32px;
+    display:flex;
+    height: 32px;
+    cursor: pointer;
+    flex-direction: row;
+    
+    }
+    
+    .contactUs {
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    
+    .input-size {
+        padding: 10px 10px;
+    }
+    
+    .btn-s {
+        padding: 15px 10px;
+    }
+    
+    .footer span {
+        font-size: 1.3rem;
+    }
+    
+    }
+    
+     /* large screens : Desktop and 4k screens */
+    
+     @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+    
+              
+    .contact-cfg {
+        flex-direction: row;
+        border-radius: 30px;
+    }
+    
+    .address-c {
+        flex: 70%;
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+    }
+    
+    .contact-cfg h2 {
+        font-size: 1.5rem;
+        
+    }
+    
+    .contact-cfg p , span {
+        font-size: 1.2rem;
+    }
+    
+    .intouch {
+        flex: 100%;
+        height: 400px;
+        justify-content: space-evenly;
+        
+    }
+    
+    
+    .flex-icon {
+        width: 60%;
+        display: flex;
+        justify-content:space-between;
+        
+      
+    }
+    
+    .contactIcon {
+    width: 40px;
+    display:flex;
+    height: 40px;
+    cursor: pointer;
+    flex-direction: row;
+    
+    }
+    
+    
+    .contactUs {
+        flex: 100%;
+        display: flex;
+        height: 440px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    
+    .input-size {
+        padding: 15px 10px;
+    }
+    
+    .btn-s {
+        padding: 16px 10px;
+        font-size:1.2rem
+    }
+    
+    .footer span {
+        font-size: 1.3rem;
+    }
+    
+    }
+    
+          /* 5k screens and above */
+    
+    @media only screen and (min-width:91.0em) {
+        .contact-cfg {
+            flex-direction: row;
+            border-radius: 30px 30px 0 0;
+        }
+        
+        .address-c {
+            flex: 70%;
+            display: flex;
+            height: 500px;
+            flex-direction: column;
+            justify-content: space-evenly;
+           
+        }
+        
+        .contact-cfg h2 {
+            font-size: 2.7rem;
+            
+        }
+        
+        .contact-cfg p , span {
+            font-size: 1.8rem;
+        }
+        
+        .intouch {
+            flex: 100%;
+            height: 750px;
+            justify-content: space-evenly;
+            
+        }
+        
+        
+        .flex-icon {
+            width: 60%;
+            display: flex;
+            justify-content:space-between;
+            
+          
+        }
+        
+        .contactIcon {
+        width: 70px;
+        display:flex;
+        height: 70px;
+        cursor: pointer;
+        flex-direction: row;
+        
+        }
+        
+        
+        .contactUs {
+            flex: 100%;
+            display: flex;
+            height: 800px;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        
+        .input-size {
+            padding: 30px 10px;
+            margin-bottom: 20px;
+        }
+    
+        .input-area {
+            padding: 50px 10px;
+        }
+        
+        .btn-s {
+            padding: 30px 10px;
+            font-size:2.5rem;
+        }
+    
+        .footer span {
+            font-size: 1.9rem;
+        }
+    }

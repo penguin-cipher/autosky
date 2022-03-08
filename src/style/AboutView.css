@@ -1,0 +1,125 @@
+@media screen {
+    .abtSection {   
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+  
+    
+    .abtPg {
+        width: 98%;
+        display:flex;
+        height:100px;
+        margin: 100px 0;
+        text-align: justify;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; 
+    
+    }
+
+    .abtPg h1 {
+       font-size:1.5rem;
+       text-align: center;
+       margin-bottom: 10px;
+    }
+
+    .abtPg p {
+        font-size:1rem;
+        word-break: normal;
+        
+    }
+    
+  }
+
+
+     /* ipad/tablet  */
+@media only screen and (min-width:48.0em){ 
+    
+    .abtPg {
+        text-align: justify;
+        height:300px;
+    }
+    
+    .abtPg h1 {
+        font-size:2.2rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+ 
+    .abtPg p {
+         text-align:center;
+         margin-top: 20px;
+         font-size: 1.4rem;
+     }
+ 
+}
+  
+     
+      /* ipad pro screens */
+@media only screen and (min-width:49.0em) and (max-width:64em) {
+     
+    .abtPg {
+
+        width: 90%;
+        height:350px;
+        text-align: justify;
+    }
+    
+       .abtPg h1 {
+          font-size:2.4rem;
+          text-align: center;
+       }
+
+       .abtPg p {
+        text-align:center;
+        margin-top: 30px;
+        font-size: 1.7rem;
+    }
+
+
+}
+
+          /* large screens : Desktop and 4k screens */
+  
+@media only screen and (min-width:64.063em) and (max-width:90.0em) {
+    
+    .abtPg {
+        width: 80%;
+        height:350px;
+        text-align: justify;
+    }
+   
+       .abtPg h1 {
+          text-align: center;
+          font-size:2.4rem;
+       }
+
+       .abtPg p {
+        text-align:center;
+        font-size: 1.3rem;
+    }
+
+  
+  }
+
+  
+     /* 5k screens and above */
+
+@media only screen and (min-width:91.0em) {
+   
+    .abtPg {
+        width: 90%;
+        height:500px;
+        text-align: justify;
+    }
+   
+       .abtPg h1 {
+          font-size:5rem;
+       }
+
+       .abtPg p {
+        font-size: 3rem;
+    }
+
+}

@@ -1,0 +1,215 @@
+@media screen {
+
+    .whySection {
+        padding:30px 0;
+        border-radius: 30px;
+        place-items: center;
+        background-color: var(--card-color);
+    
+        
+    }
+    
+    .why-why-container h1{
+      text-align: center;
+      font-size:1.6rem;
+      
+    }
+    
+    .whyContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+       
+        
+    }
+    
+    .why {
+        
+        box-shadow: 0 0 0 var(--primary-color);
+        animation: pulse 3s infinite;
+        flex-direction: column;
+        justify-content:center;
+        border-radius: 12px; 
+        align-items: center;
+        width: fit-content;
+        margin-top: 20px;
+        height: 250px;
+        display:flex;
+       
+    }
+    
+    
+    @keyframes pulse {
+        0% {
+          -webkit-box-shadow: 0 0 0 0 var(--highligter);
+        }
+        70% {
+            -webkit-box-shadow: 0 0 0 6px rgba(204,169,44, 0);
+        }
+        100% {
+            -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        }
+      }
+    
+    .why p {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1rem;
+        padding: 0;
+    }
+    
+    .icon-icon {
+        height: 100px;
+        margin: 10px; 
+    }
+    
+    }
+    
+       /* ipad/tablet */
+       @media only screen and (min-width:48.0em){ 
+    
+       
+        .why-why-container h1{
+          text-align: center;
+          font-size: 2.4rem;
+          margin-bottom: 20px;
+    
+        }
+        .whyContainer {
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+    
+        .why {
+            margin:5px ;
+        }
+     
+        .why p {
+            text-align: justify;
+            font-size: 1rem;
+            padding:5px 10px;
+        }
+        
+    
+       }
+    
+           /* ipad pro screens & laptop */
+    @media only screen and (min-width:49.0em) and (max-width:64em) {
+        
+        .whySection {
+            padding:100px 0;
+        }
+        
+          
+        .why-why-container h1{
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+      
+          }
+          .whyContainer {
+              display: flex;
+              padding:20px;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+          }
+      
+      
+          .why {
+              margin:8px ;
+          }
+    
+       
+          .why p {
+              text-align: justify;
+              font-size: 1rem;
+              padding:5px 10px;
+          }
+          
+    
+    }
+    
+    
+     /* large screens : Desktop and 4k screens */
+    @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+    
+        .whySection {
+            padding:80px 0;
+        
+        }
+        
+          
+        .why-why-container h1{
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+      
+          }
+          .whyContainer {
+              padding:70px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+          }
+      
+      
+          .why {
+              margin:10px;
+              height: 300px;
+              width: 300px;
+          }
+       
+          
+     }
+    
+          /* 5k screens and above */
+    
+          @media only screen and (min-width:91.0em) {
+    
+            .whySection {
+                padding:200px 0;
+            }
+            
+              
+            .why-why-container h1{
+                text-align: center;
+                font-size: 5rem;
+                margin-bottom: 20px;
+          
+              }
+    
+              .whyContainer {
+                  padding:100px;
+                  display: flex;
+                  flex-direction: row;
+              }
+          
+          
+              .why {
+                  margin:10px;
+                  height: fit-content;
+                  width: fit-content;
+             
+              }
+    
+              .icon-icon {
+                height: 200px;
+                margin: 10px; 
+            }
+    
+            .why p {
+                text-align: justify;
+                font-size: 2rem;
+                padding:5px 10px;
+            }
+    
+              
+        }

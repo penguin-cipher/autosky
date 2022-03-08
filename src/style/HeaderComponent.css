@@ -1,0 +1,158 @@
+@media screen {
+    .header-container {
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+        justify-content: space-between;   
+     
+      
+    }
+    
+.logo {
+    width:70px;
+    height:30px;
+    }
+    
+    .nav-container {
+        display: flex;
+        flex-grow: 0.4;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .links {
+        text-decoration: none;
+        color: var(--secondary-bx-color);
+        font-size: 0.9rem;
+        outline: none;
+    }
+    
+    .links:hover{
+       color:var(--highligter) ;
+       transition: none;
+    }
+
+    .hide {
+        visibility: hidden;
+         
+    }
+}
+
+
+  /* small phones */
+@media only screen and (min-width:283px) and (max-width:374px){ 
+
+    .links:last-child {
+        position: relative;
+        right: 30px;
+   }
+      
+
+}
+
+    /* ipad/tablet */
+@media only screen and (min-width:48.0em){ 
+
+    .logo {
+        width:60px;
+        height:30px;
+    }
+
+
+    .hide {
+        visibility: visible;
+         
+    }
+
+    .nav-container {
+        flex-grow: 0.3;
+
+    }
+
+    .links {
+        font-size: 1rem;
+    }
+    
+
+}
+    
+    /* ipad pro screens & laptop */
+@media only screen and (min-width:49.0em) and (max-width:64em) {
+    .logo {
+        width:70px;
+        height:10px;
+    }
+
+    .nav-container {
+        flex-grow: 0.4;
+
+    }
+    
+    .links {
+        font-weight: 400px;
+        font-size: 1rem;
+    }
+
+    .hide {
+        visibility: visible;
+         
+    }
+}
+    
+
+    /* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width:64.063em) and (max-width:90.0em) {
+
+    .logo {
+        
+        width:80px;
+        height:30px;
+    }
+
+    .nav-container {
+        flex-grow: 0.2;
+
+    }
+    
+    .links {
+        font-weight: 700px;
+        font-size: 1rem;
+    }
+
+    .hide {
+        visibility: visible;
+         
+    }
+
+}    
+
+
+        /* 5k screens and above */
+
+@media only screen and (min-width:91.0em) {
+
+    .logo {
+        width:160px;
+        height:70px;
+    }
+
+    .nav-container {
+        flex-grow: 0.2;
+
+    }
+    
+    .links {
+        font-weight: 700px;
+        font-size: 1.8rem;
+    }
+
+    .hide {
+        visibility: visible;
+         
+    }
+
+    
+}
+

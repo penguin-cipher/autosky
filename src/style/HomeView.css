@@ -1,0 +1,202 @@
+@media screen {
+
+    .home-container {
+        background-image: url('../assets/sky.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-filter: grayscale(78%); 
+        filter: grayscale(78%);
+        border-radius: 30px;
+        height: 200px;
+    }
+    
+    .homeLogo {
+       display: none;
+    }
+    
+    .homePg {
+        padding: 20px;
+        color: #bdc9d3;
+    }
+    
+    .homePg h1 {
+        font-size: 1.6rem;
+        color: #bdc9d3;
+    }
+    
+    .homePg p {
+        font-size: 0.9rem;
+        color:#eaecec; 
+        padding-top:10px;
+    }
+    
+    }
+    
+        /* ipad/tablet */
+    @media only screen and (min-width:48.0em){ 
+    
+        .home-container {
+            height: 300px;
+        }
+    
+        .homePg h1 {
+            font-size: 3.5rem;
+            color: #bdc9d3;
+        }
+        
+        .homePg p {
+            font-size: 2rem;
+            color:#eaecec; 
+    
+        }
+    
+        
+    }
+    
+        /* ipad pro & laptop screens */
+    @media only screen and (min-width:49.0em) and (max-width:64em) { 
+    
+    
+        .home-container {
+            background-color:var(--bx-outline-color1);
+            background-image: none;
+            border-radius: 30px;
+            -webkit-filter: none; 
+            filter: none;
+        }
+    
+        .homeLogo {
+            right: 0;
+            margin: 13px;
+            display:flex; 
+            width: 320px;   
+            height: 400px;
+            position:absolute;
+            fill: var(--bx-outline-color1);
+            cursor: pointer;
+         }
+    
+        
+        .home-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+        }
+    
+        .homePg {
+            margin-right: 300px;
+        }
+        .homePg h1 {
+    
+            font-size: 2.2rem;
+            color: var(--secondary-bx-color);
+        }
+        
+        .homePg p {
+            font-size: 1.2rem;
+            color: var(--secondary-bx-color);
+    
+        }
+    }
+    
+        /* large screens : Desktop and 4k screens */
+    @media only screen and (min-width:64.063em) and (max-width:90.0em) {
+    
+        
+    
+        .home-container {
+            background-color:var(--bx-outline-color1);
+            background-image: none;
+            border-radius: 30px;
+            -webkit-filter: none; 
+            filter: none;
+        }
+    
+        .home-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 300px;
+        }
+    
+    
+        .homeLogo {
+            right: 0;
+            display:flex; 
+            width: 300px;   
+            height: 288px;
+            position: absolute;
+            fill: var(--bx-outline-color1);
+         }
+    
+        
+       
+        .homePg {
+            margin-right: 600px;
+        }
+        .homePg h1 {
+            font-size: 3.6rem;
+            color: var(--secondary-bx-color);
+        }
+        
+        .homePg p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: var(--secondary-bx-color );
+    
+        }
+    
+    }
+    
+            /* 5k screens and above */
+    
+    @media only screen and (min-width:91.0em) {
+    
+         
+    
+        .home-container {
+            background-color:var(--bx-outline-color1);
+            background-image: none;
+            border-radius: 30px;
+            -webkit-filter: none; 
+            filter: none;
+        }
+    
+        .homeLogo {
+            right: 0;
+            display:flex; 
+            width: 520px;   
+            height: 510px;
+            position:absolute;
+            fill: var(--bx-outline-color1);
+         }
+    
+        
+        .home-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 500px;
+        }
+    
+        .homePg {
+            margin-right: 1000px;
+        }
+        .homePg h1 {
+    
+            font-size: 7rem;
+            
+            color: var(--secondary-bx-color);
+        }
+        
+        .homePg p {
+            font-size: 3rem;
+            margin-top: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--secondary-bx-color );
+    
+        }
+    
+    }
