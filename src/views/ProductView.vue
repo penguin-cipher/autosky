@@ -3,7 +3,7 @@
     <h1>{{ productTitle }}</h1>
     <div class="product-c">
       <div
-        v-for="({ Name, imgUrl, price }, index) in productData"
+        v-for="({ Name, imgUrl, price, description }, index) in productData"
         :key="index"
         class="productCard"
       >

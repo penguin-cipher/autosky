@@ -70,7 +70,6 @@
     
     .productInfo h3 {
         font-weight: 200px;
-        text-align: center;
         padding-top: 10px;  
         word-break: break-all
         
@@ -78,7 +77,6 @@
 
     .productInfo p , span {
         margin: 5px 0;
-        word-break: break-all;
     }
     
     .productInfo span {

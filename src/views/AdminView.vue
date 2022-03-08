@@ -49,8 +49,7 @@ export default {
           this.adminForm.email,
           this.adminForm.password
         )
-        .then((userCredentials) => {
-          console.log(userCredentials);
+        .then(() => {
           this.$router.push("/upload");
         })
         .catch((error) => {
@@ -64,7 +63,3 @@ export default {
 @import "../style/AdminView.css";
 </style>
 
-// logIn() { // firebase // .auth() // .createUserWithEmailAndPassword( //
-this.adminForm.email, // this.adminForm.password // ) // .then((userCredentials)
-=> { // console.log(userCredentials); // this.$router.push("/upload"); // }) //
-.catch((err) => { // console.log(err.errorMessage); // }); // },

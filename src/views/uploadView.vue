@@ -49,10 +49,6 @@
     <div class="logOut" @click="logOut">
       <p>Are you done? <span>Logout</span></p>
     </div>
-    <div class="msgUpdate">
-      <p>{{ message }}</p>
-      <span>{{ email }}</span>
-    </div>
   </div>
 </template>
 <script>
