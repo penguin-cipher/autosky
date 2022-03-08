@@ -54,7 +54,6 @@ export default {
           this.$router.push("/upload");
         })
         .catch((error) => {
-          console.log(error.message);
           this.errorMessage = error.message;
         });
     },

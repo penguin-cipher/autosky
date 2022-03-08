@@ -65,6 +65,9 @@ export default {
     return {
       imgFile: null,
       errorMsg: "",
+      errMsg: "",
+      response: "",
+      networkError: "",
       formData: {
         Name: "",
         description: "",
@@ -77,14 +80,9 @@ export default {
   methods: {
     onImageUpload(e) {
       this.imgFile = e.target.files[0];
-      console.log(this.imgFile);
       this.imgUploaded = null;
       this.uploadValue = 0;
       this.onUpload();
-    },
-
-    function() {
-      console.log(this.formData);
     },
 
     onUpload() {
@@ -101,7 +99,7 @@ export default {
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
         },
         (err) => {
-          console.log(err.message);
+          this.errorMsg = err.message;
         },
         () => {
           this.uploadValue = 100;
@@ -129,10 +127,10 @@ export default {
           }
         )
         .then((res) => {
-          console.log(res);
+          this.response = res;
         })
         .catch((err) => {
-          console.log(err);
+          this.errMsg = err;
         });
 
       this.formData.Name = "";
@@ -148,7 +146,7 @@ export default {
           this.$router.push("/");
         })
         .catch((error) => {
-          console.log(error.message);
+          this.networkError = error.message;
         });
     },
   },

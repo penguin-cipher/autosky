@@ -133,7 +133,6 @@ export default {
       this.usrName = "";
       this.email = "";
       this.message = "";
-      console.log(this.YOUR_SERVICE_ID);
     },
   },
 };
